@@ -1,0 +1,114 @@
+/* -------------------------
+   GLOBAL STYLES
+--------------------------- */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e0f7f1; /* light blue-green background */
+  color: #1a1a1a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3 {
+  color: #0f4c4c; /* dark teal for headings */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* -------------------------
+   CONTAINER
+--------------------------- */
+.App {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* -------------------------
+   INPUTS & BUTTONS
+--------------------------- */
+input[type="text"] {
+  padding: 10px 15px;
+  width: 60%;
+  max-width: 300px;
+  border: 1px solid #88d8c0; /* light teal border */
+  border-radius: 8px;
+  outline: none;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #2aa79b; /* darker teal on focus */
+  box-shadow: 0 0 5px rgba(42, 167, 155, 0.5);
+}
+
+button {
+  padding: 10px 20px;
+  background: #2aa79b; /* teal button */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1f7f72; /* darker teal on hover */
+}
+
+/* -------------------------
+   STOCK CARD
+--------------------------- */
+.stock-card {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f0fdf9; /* very light teal */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stock-card p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.stock-card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #0f4c4c;
+}
+
+/* -------------------------
+   CHARTS
+--------------------------- */
+.recharts-wrapper {
+  margin: 20px auto;
+}
+
+/* -------------------------
+   RESPONSIVE
+--------------------------- */
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
